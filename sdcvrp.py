@@ -368,7 +368,7 @@ def main(iteration):
 
                     with open(f"sdcvrp/LOCAL_CHEAPEST_ARC/GENERIC_TABU_SEARCH/sdcvrp_objectives_{iteration}.csv", mode='w', newline='') as file:
                         writer = csv.writer(file)
-                        writer.writerow(['iteration', 'objective_value'])
+                        writer.writerow(['parameter', 'objective_value'])
                         writer.writerows(objective_values)
             solution_found = True
             return solutions
